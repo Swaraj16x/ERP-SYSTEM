@@ -1,0 +1,64 @@
+body {
+  
+  margin: 0;
+  color: #edf2f4;
+  background: #2b2d42;
+}
+
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+
+  
+  --gray: #edf2f4;
+  --cardGray: #edf2f4;
+  --lightGray: #edf2f4;
+  --cardTitle: #edf2f4;
+  --baseBackground: white;
+  --baseColor: #2b2d42;
+  --switchSpinner: #edf2f4;
+  --switch: #8d99ae;
+}
+
+
+
+.is-dark-mode {
+  --cardGray: #8d99ae;
+  --baseBackground: #2b2d42;
+  --baseColor: #edf2f4;
+  --gray: #8088ad;
+  --lightGray: #2b2d42;
+  --cardTitle: #8d99ae;
+  --switchSpinner: #8d99ae;
+  --switch: linear-gradient(to right, #4796d2 0%, #37cebf 100%);
+  --navHome: rgb(0, 200, 255);
+}
+
+.is-light-mode {
+  --gray: #edf2f4;
+  --cardGray: #edf2f4;
+  --lightGray: #edf2f4;
+  --cardTitle: #8d99ae;
+  --baseBackground: #edf2f4;
+  --baseColor: #2b2d42;
+  --switchSpinner: #edf2f4;
+  --switch: #8d99ae;
+  --navHome:##2b2d42;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cardGray: #8d99ae;
+    --baseBackground: #8d99ae;
+    --baseColor: #edf2f4;
+    --gray: #8d99ae;
+    --lightGray: #2b2d42;
+    --cardTitle: #8d99ae;
+    --switchSpinner: #8d99ae;
+    --switch: linear-gradient(to right, #4796d2 0%, #37cebf 100%);
+  }
+}
+
+h2 {
+  color: #8d99ae;
+}
